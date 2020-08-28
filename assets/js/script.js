@@ -101,6 +101,7 @@ $('.list-group').on("blur", 'textarea', function(){
   $(this).replaceWith(taskP);
 });
 
+//changes date span element to an input element.
 $('.list-group').on('click', 'span', function(){
   //get current text
   var date = $(this)
@@ -120,6 +121,7 @@ $('.list-group').on('click', 'span', function(){
   dateInput.trigger('focus');
 });
 
+//changes date input back in span, saving the changes to the element. 
 $('.list-group').on("blur", "input[type='text']", function(){
     //get current text
     var date = $(this)
